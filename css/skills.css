@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/assets/bg.gif');
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Covers the entire viewport */
+    background-attachment: fixed; /* Keeps the background constant */
+    height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    color: #00FFFF; /* Electric Blue */
+    text-shadow: 0 0 3px #000, 0 0 10px #00FFFF; /* Subtle glow effect */
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFF;
+    line-height: 1.6;
+    text-shadow: 0px 0px 1px #000; /* Slight text shadow for readability */
+}
+
+/* Links */
+a {
+    font-family: 'Monoton', cursive;
+    text-decoration: underline;
+    color: #FF4500; /* Retro orange */
+}
+
+/* Back Button */
+.back {
+    background: white;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
+.back a img {
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.back a img:hover {
+    transform: scale(1.1); /* Subtle hover effect */
+}
+
+/* Skill Section */
+.skill {
+    text-align: center;
+    padding: 2rem;
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+.content img {
+    max-width: 90%;
+    height: auto;
+   
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+/* Skill Logos */
+.skillLogo {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: #000000; /* Black background for contrast */
+  
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+

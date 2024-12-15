@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>90s Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+
+      color: #00ff00;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .back {
+    background: white;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+    main {
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+   
+      border-radius: 10px;
+      p{
+        font-size: larger;
+        font-weight: 700;
+      }
+
+    }
+    button {
+      background-color: #00ff00;
+      color: #000000;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #009900;
+    }
+    .result {
+      color: #00ff00;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="back">
+        <a href="/index.html">
+            <img src="https://www.svgrepo.com/show/498641/arrow-left-bold.svg" width="50" alt="Back">
+        </a>
+    </div>
+    <h1>My Projects</h1>
+</header>
+  <main>
+    <h1>90s Tech Quiz</h1>
+    <p>How much do you know about the companies that shaped the 90s?</p>
+    <div id="quiz-container"></div>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </main>
+  <script src="quizz.js"></script>
+</body>
+</html>
